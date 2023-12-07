@@ -2,6 +2,8 @@ public class yft
 {
     public static void main(String [] args)
     {
+        int start = Integer.parseInt(args[0]);
+        int end = Integer.parseInt(args[1]);
         ug adding = (a, b) -> {
             int sum = 0;
             for(int i = a; i <= b; i++)
@@ -11,7 +13,7 @@ public class yft
             return sum;
         };
 
-        int num = adding.add(1,3);
+        int num = adding.add(start,end);
         System.out.println(num);
     }
 }
